@@ -7,7 +7,7 @@ from .models import MovieBlock
 class MovieBlockAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {
-            'fields': ('title', 'movie_id')
+            'fields': ('title', 'movie_id', 'video', 'genre_ids')
         }),
         (None, {
             'fields': ('popularity', 'vote_count', 'vote_average')
@@ -17,7 +17,8 @@ class MovieBlockAdmin(admin.ModelAdmin):
         }),
         (None, {
             'fields': (
-                'overview', 'original_language', 'adult', 'release_date'
+                'overview', 'original_language',
+                'original_title', 'adult', 'release_date'
             )
         })
     )

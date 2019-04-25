@@ -8,6 +8,8 @@ class MovieSerializer(serializers.HyperlinkedModelSerializer):
         fields = (
             'title',
             'movie_id',
+            'video',
+            'vote_average',
             'popularity',
             'vote_count',
             'vote_average',
@@ -15,6 +17,8 @@ class MovieSerializer(serializers.HyperlinkedModelSerializer):
             'backdrop_path',
             'overview',
             'original_language',
+            'original_title',
             'adult',
+            'genre_ids',
             'release_date'
         )
